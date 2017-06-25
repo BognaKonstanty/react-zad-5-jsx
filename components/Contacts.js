@@ -5,7 +5,7 @@
 
   render: function() {
     var contacts = this.props.items.map(function(contact) {
-        <Contact item={contact} key={contact.id}></Contact>
+        return <Contact item={contact} key={contact.id}></Contact>
     });
 
     return (
